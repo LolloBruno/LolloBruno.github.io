@@ -1,0 +1,59 @@
+<!IDOCTYPE html>
+<html lang="it">
+<head>
+	<link rel = "stylesheet" href="./css/myStyle.css">
+	<meta charset="utf-8">
+	<meta name="keywords" content="f1, gara, macchine">
+	<meta name="description"3A Rob">
+	<title>Formula 1 - Login</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url(./img/sfondoLogin.png);
+        }
+    </style>
+
+<form>
+    <div style=" background-color: rgba(65, 65, 65, 0.8); height: 300px; width: 20%; text-align: center; margin: 200px 42%;">
+        <label style="color: white; font-size: larger;"><b>Username</b></label>
+        <br><br><input type="text" id="uname" style="width: 90%; height: 30px;" placeholder="Enter Username">
+    
+        <br><br><br><label style="color: white; font-size: larger;"><b>Password</b></label>
+        <br><br><input type="text" id="psw" style="width: 90%; height: 30px;" placeholder="Enter Password">
+            
+        <br><br><button id="bottone" style="color: white; font-size: 100%;">Login</button>
+
+        <br><p style="color: white;">Non hai ancora un account?</p>
+        <a style="color: blue;"href="signup.html">Registrati</a>
+        
+      </div>
+</form>
+
+<script>
+    const nome = document.getElementById("uname") //salvo il valore in una CONST, non posso rischiare il dato dato in input dall'utente
+    const password = document.getElementById("psw")
+
+    const nomeGiusto = "Lorenzo"
+    const passwordGiusta = "Bruno"
+
+    const registra = document.getElementById("bottone")
+
+    registra.addEventListener("click", function(e) {
+        //Stampare una stringa
+       
+            alert("Ciao " + nome.value)
+       
+    })
+
+</script> 
+
+
+</body>
+</html>
+
+
+
+
+
